@@ -5,31 +5,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lili Sazonova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <a href="#" class="logo"></a>
-      <nav class="nav">
-        <ul class="social-list">
+    <div class="container header-container">
+      <div class="social">
+        <a href="#" class="logo link">Li.Sa</a>
+        <ul class="social-list list">
           <li class="social-list">
-            <svg>
-              <use href="img/icons.svg#github"></use>
+            <svg width="24" height="24">
+              <use href="./img/icons.svg#github"></use>
             </svg>
           </li>
           <li class="social-list">
-            <svg>
-              <use href="img/icons.svg#github"></use>
+            <svg width="24" height="24">
+              <use href="./img/icons.svg#linkedin"></use>
             </svg>
           </li>
           <li class="social-list">
-            <svg>
-              <use href="img/icons.svg#github"></use>
+            <svg width="24" height="24">
+              <use href="./img/icons.svg#telegram"></use>
             </svg>
           </li>
         </ul>
-        <ul class="nav-list">
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list list">
           <li class="nav-item">Technologies</li>
           <li class="nav-item">About me</li>
           <li class="nav-item">Projects</li>
@@ -72,8 +82,11 @@
     <section class="tech">
       <div class="container">
         <h2 class="title">Technologies</h2>
-        <ul class="tech-list">
-          <li class="tech-item">HTML</li>
+        <ul class="tech-list list">
+          <li class="tech-item">
+            <label for="file">HTML</label>
+            <progress class="progress" id="file" value="100" max="100">100%</progress>
+          </li>
           <li class="tech-item">CSS</li>
           <li class="tech-item">JavaScript</li>
           <li class="tech-item">Git</li>
@@ -83,7 +96,7 @@
         </ul>
 
         <h2 class="title">Soft Skills</h2>
-        <ul class="soft-list">
+        <ul class="soft-list list">
           <li class="soft-item">Teamwork</li>
           <li class="soft-item">Collaboration</li>
           <li class="soft-item">Time management</li>
@@ -95,41 +108,51 @@
     <section class="projects">
       <div class="container">
         <h2 class="title">Projects</h2>
-        <div class="card">
-          <img src="img/project.png" alt="" />
-          <p class="card-title">Project Title</p>
-          <p class="card-subtitle">Project description</p>
-          <button class="preview">Live Preview</button>
-          <button class="code">View Code</button>
-        </div>
-        <div class="card">
-          <img src="img/project.png" alt="" />
-          <p class="card-title">Project Title</p>
-          <p class="card-subtitle">Project description</p>
-          <button class="preview">Live Preview</button>
-          <button class="code">View Code</button>
-        </div>
-        <div class="card">
-          <img src="img/project.png" alt="" />
-          <p class="card-title">Project Title</p>
-          <p class="card-subtitle">Project description</p>
-          <button class="preview">Live Preview</button>
-          <button class="code">View Code</button>
-        </div>
-        <div class="card">
-          <img src="img/project.png" alt="" />
-          <p class="card-title">Project Title</p>
-          <p class="card-subtitle">Project description</p>
-          <button class="preview">Live Preview</button>
-          <button class="code">View Code</button>
-        </div>
-        <div class="card">
-          <img src="img/project.png" alt="" />
-          <p class="card-title">Project Title</p>
-          <p class="card-subtitle">Project description</p>
-          <button class="preview">Live Preview</button>
-          <button class="code">View Code</button>
-        </div>
+        <ul class="card-list list">
+          <li class="card-item">
+            <img src="img/project.png" alt="" />
+            <p class="card-title">Project Title</p>
+            <p class="card-subtitle">Project description</p>
+            <button class="preview">Live Preview</button>
+            <button class="code">View Code</button>
+          </li>
+        </ul>
+        <ul class="card-list list">
+          <li class="card-item">
+            <img src="img/project.png" alt="" />
+            <p class="card-title">Project Title</p>
+            <p class="card-subtitle">Project description</p>
+            <button class="preview">Live Preview</button>
+            <button class="code">View Code</button>
+          </li>
+        </ul>
+        <ul class="card-list list">
+          <li class="card-item">
+            <img src="img/project.png" alt="" />
+            <p class="card-title">Project Title</p>
+            <p class="card-subtitle">Project description</p>
+            <button class="preview">Live Preview</button>
+            <button class="code">View Code</button>
+          </li>
+        </ul>
+        <ul class="card-list list">
+          <li class="card-item">
+            <img src="img/project.png" alt="" />
+            <p class="card-title">Project Title</p>
+            <p class="card-subtitle">Project description</p>
+            <button class="preview">Live Preview</button>
+            <button class="code">View Code</button>
+          </li>
+        </ul>
+        <ul class="card-list list">
+          <li class="card-item">
+            <img src="img/project.png" alt="" />
+            <p class="card-title">Project Title</p>
+            <p class="card-subtitle">Project description</p>
+            <button class="preview">Live Preview</button>
+            <button class="code">View Code</button>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -138,28 +161,28 @@
         <div class="connect">
           <h2 class="title">Contact with me</h2>
           <div class="line"></div>
-          <ul class="contacts-list">
+          <ul class="contacts-list list">
             <li class="contacts-item">
-              <a class="contacts-link" href="mailto:lilissazonova@gmail.com">
-                <svg class="connect__mail-icon" width="16" height="12"></svg>
-                <use href="./images/icons.svg#icon-envelope"></use>
+              <a class="contacts-link link" href="mailto:lilissazonova@gmail.com">
+                <svg width="24" height="24">
+                  <use href="./img/icons.svg#email"></use>
                 </svg>
                 lilissazonova@gmail.com
               </a>
             </li>
             <li class="contacts-item">
-              <a class="contacts-link" href="tel:+380988227077">
-                <svg width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
+              <a class="contacts-link link" href="tel:+380988227077">
+                <svg width="24" height="24">
+                  <use href="./img/icons.svg#call"></use>
                 </svg>
                 +380988227077</a>
             </li>
-            <li class="contacts-item"></li>
-            <a class="contacts-link" href="#">
-              <svg width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              Odessa, Ukraine</a>
+            <li class="contacts-item">
+              <a class="contacts-link link" href="#">
+                <svg width="24" height="24">
+                  <use href="./img/icons.svg#location"></use>
+                </svg>
+                Odessa, Ukraine</a>
             </li>
           </ul>
         </div>
