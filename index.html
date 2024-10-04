@@ -21,28 +21,40 @@
         <a href="#" class="logo link">Li.Sa</a>
         <ul class="social-list list">
           <li class="social-list">
-            <svg width="24" height="24">
-              <use href="./img/icons.svg#github"></use>
-            </svg>
+            <a href="#" class="social-link link" target="_blank">
+              <svg class="icons">
+                <use href="./img/icons.svg#github"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-list">
-            <svg width="24" height="24">
-              <use href="./img/icons.svg#linkedin"></use>
-            </svg>
+            <a href="#" class="social-link link" target="_blank">
+              <svg class="icons">
+                <use href="./img/icons.svg#linkedin"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-list">
-            <svg width="24" height="24">
-              <use href="./img/icons.svg#telegram"></use>
-            </svg>
+            <a href="#" class="social-link link" target="_blank">
+              <svg class="icons">
+                <use href="./img/icons.svg#telegram"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
 
       <nav class="nav">
         <ul class="nav-list list">
-          <li class="nav-item">Technologies</li>
-          <li class="nav-item">About me</li>
-          <li class="nav-item">Projects</li>
+          <a href="#" class="nav-link link">
+            <li class="nav-item">Tech Skills</li>
+          </a>
+          <a href="#" class="nav-link link">
+            <li class="nav-item">About me</li>
+          </a>
+          <a href="#" class="nav-link link">
+            <li class="nav-item">Projects</li>
+          </a>
         </ul>
       </nav>
     </div>
@@ -50,20 +62,24 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title">Hi, I'm Lili Sazonova</h1>
-        <p class="hero-subtitle">Frontend developer</p>
+        <h1 class="hero-title">Hi, I'm <span class="hero-name">Lili Sazonova</span>, Frontend Developer</h1>
         <p class="hero-description">
           Frontend Magic: Coding Dreams into Reality!
         </p>
 
-        <div class="ellipse">
-          <div class="hero-foto">
-            <img src="img/foto.png" alt="Me" />
+        <div class="hero-image-wrapper">
+          <div class="decorative-circle">
+            <div class="decorative-circle-s"></div>
+            <div class="decorative-circle-xs"></div>
           </div>
-          <div class="circle"></div>
-        </div>
 
-        <button class="button">Download CV</button>
+          <div class="hero-image">
+            <img src="./img/IMG_4709 2.JPG" alt="Profile Photo">
+          </div>
+        </div>
+        <div class="hero-content">
+          <a href="your-cv-link.pdf" class="download-btn">Download CV</a>
+        </div>
       </div>
     </section>
 
@@ -71,36 +87,53 @@
       <div class="container">
         <h2 class="title">About me</h2>
         <p class="about-me">
-          I am a frontend developer with a particular interest in making
-          things simple and automating daily tasks. I try to keep up with
-          security and best practices, and am always looking for new things to
-          learn.
+          I am a Front-End Developer with a strong passion for learning
+          and growth. I have hands-on skills in HTML, CSS, JavaScript, and
+          REST APIs. My strengths include attention to detail, problem-solving
+          abilities, and teamwork. I am looking for a dynamic company with a
+          collaborative team that values innovation and mutual support. I want
+          to contribute to projects that bring positive change and make a
+          difference. With desire and determination, nothing is impossible, I
+          constantly find creative and effective solutions to complex
+          problems.
         </p>
       </div>
     </section>
 
     <section class="tech">
       <div class="container">
-        <h2 class="title">Technologies</h2>
+        <h2 class="title">Tech Skills</h2>
         <ul class="tech-list list">
           <li class="tech-item">
-            <label for="file">HTML</label>
-            <progress class="progress" id="file" value="100" max="100">100%</progress>
+            <img class="tech-img" src="./img/tech/html.png" alt="HTML5">
           </li>
-          <li class="tech-item">CSS</li>
-          <li class="tech-item">JavaScript</li>
-          <li class="tech-item">Git</li>
-          <li class="tech-item">GitHub</li>
-          <li class="tech-item">React</li>
-          <li class="tech-item">SASS</li>
-        </ul>
-
-        <h2 class="title">Soft Skills</h2>
-        <ul class="soft-list list">
-          <li class="soft-item">Teamwork</li>
-          <li class="soft-item">Collaboration</li>
-          <li class="soft-item">Time management</li>
-          <li class="soft-item">Adaptability</li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/css.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/js.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/node.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/react.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/mongodb.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/sass.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/git.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/terminal.png" alt="HTML5">
+          </li>
+          <li class="tech-item">
+            <img class="tech-img" src="./img/tech/visual-studio-code.png" alt="HTML5">
+          </li>
         </ul>
       </div>
     </section>
@@ -110,47 +143,44 @@
         <h2 class="title">Projects</h2>
         <ul class="card-list list">
           <li class="card-item">
-            <img src="img/project.png" alt="" />
-            <p class="card-title">Project Title</p>
-            <p class="card-subtitle">Project description</p>
-            <button class="preview">Live Preview</button>
-            <button class="code">View Code</button>
+            <img src="img/projects/CheetSheet.png" alt="Landing" />
+            <p class="card-title">Cheet Sheet for Designers</p>
+            <p class="card-subtitle">Designer landing page with the opportunity to buy training materials. Website with
+              responsive layout, burger menu and
+              attractive design.</p>
+            <div class="card-btns">
+              <button class="btn-prev">Live Preview</button>
+              <button class="btn-code">View Code</button>
+            </div>
           </li>
-        </ul>
-        <ul class="card-list list">
           <li class="card-item">
-            <img src="img/project.png" alt="" />
-            <p class="card-title">Project Title</p>
-            <p class="card-subtitle">Project description</p>
-            <button class="preview">Live Preview</button>
-            <button class="code">View Code</button>
+            <img src="./img/projects/landing.png" alt="Landing" />
+            <p class="card-title">Lloud Jefferson</p>
+            <p class="card-subtitle">Project involving the development of a web application using modern technologies.
+              The application provides users with an
+              interactive and user-friendly interface to interact with various features. Libraries used include Axios
+              for handling
+              HTTP requests, Accordion-js for creating interactive accordion elements, Izitoast for notifications, and
+              Swiper for
+              implementing carousels and sliders.</p>
+            <div class="card-btns">
+              <button class="btn-prev">Live Preview</button>
+              <button class="btn-code">View Code</button>
+            </div>
           </li>
-        </ul>
-        <ul class="card-list list">
           <li class="card-item">
-            <img src="img/project.png" alt="" />
-            <p class="card-title">Project Title</p>
-            <p class="card-subtitle">Project description</p>
-            <button class="preview">Live Preview</button>
-            <button class="code">View Code</button>
-          </li>
-        </ul>
-        <ul class="card-list list">
-          <li class="card-item">
-            <img src="img/project.png" alt="" />
-            <p class="card-title">Project Title</p>
-            <p class="card-subtitle">Project description</p>
-            <button class="preview">Live Preview</button>
-            <button class="code">View Code</button>
-          </li>
-        </ul>
-        <ul class="card-list list">
-          <li class="card-item">
-            <img src="img/project.png" alt="" />
-            <p class="card-title">Project Title</p>
-            <p class="card-subtitle">Project description</p>
-            <button class="preview">Live Preview</button>
-            <button class="code">View Code</button>
+            <img src="./img/projects/contactapp.png" alt="App" />
+            <p class="card-title">Contacts Book App</p>
+            <p class="card-subtitle">This web application provides a user authentication system, allowing users to
+              register, log in, and manage their
+              profiles. Built using React, the app leverages Redux for state management and React Router for seamless
+              navigation. The
+              authentication system is integrated with backend services, supporting secure login and logout
+              functionality.</p>
+            <div class="card-btns">
+              <button class="btn-prev">Live Preview</button>
+              <button class="btn-code">View Code</button>
+            </div>
           </li>
         </ul>
       </div>
@@ -159,45 +189,49 @@
     <footer class="footer">
       <div class="container">
         <div class="connect">
-          <h2 class="title">Contact with me</h2>
-          <div class="line"></div>
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <a class="contacts-link link" href="mailto:lilissazonova@gmail.com">
-                <svg width="24" height="24">
-                  <use href="./img/icons.svg#email"></use>
-                </svg>
-                lilissazonova@gmail.com
-              </a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="tel:+380988227077">
-                <svg width="24" height="24">
-                  <use href="./img/icons.svg#call"></use>
-                </svg>
-                +380988227077</a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="#">
-                <svg width="24" height="24">
-                  <use href="./img/icons.svg#location"></use>
-                </svg>
-                Odessa, Ukraine</a>
-            </li>
-          </ul>
+          <div class="contacts">
+            <h3 class="title">Let's Connect</h3>
+            <div class="line"></div>
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <a class="contacts-link link" href="mailto:lilissazonova@gmail.com">
+                  <svg class="icons icons-grey">
+                    <use href="./img/icons.svg#email"></use>
+                  </svg>
+                  lilissazonova@gmail.com
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link link" href="tel:+380988227077">
+                  <svg class="icons icons-grey">
+                    <use href="./img/icons.svg#call"></use>
+                  </svg>
+                  +380988227077</a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link link" href="#">
+                  <svg class="icons icons-grey">
+                    <use href="./img/icons.svg#location"></use>
+                  </svg>
+                  Odessa, Ukraine</a>
+              </li>
+            </ul>
+          </div>
+          <div class="connect-form">
+            <h3 class="title">Send me a message</h3>
+            <form class="form" action="">
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <input type="text" id="name" name="name" placeholder="Name" required>
+              <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div class="connect-form">
-          <form action="">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <textarea name="message" id="message"></textarea>
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
+
     </footer>
   </main>
 </body>
+
+
 
 </html>
