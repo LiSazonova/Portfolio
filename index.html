@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lili Sazonova</title>
+  <title>Lili Sazonova - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,24 +19,24 @@
   <header class="header">
     <div class="container header-container">
       <div class="social">
-        <a href="#" class="logo link">Li.Sa</a>
-        <ul class="social-list list">
-          <li class="social-list">
-            <a href="#" class="social-link link" target="_blank">
+        <a href="index.html" class="logo link">Li.Sa</a>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/LiSazonova" class="social-link link" target="_blank">
               <svg class="icons">
                 <use href="./img/icons.svg#github"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list">
-            <a href="#" class="social-link link" target="_blank">
+          <li class="social-item">
+            <a href="https://linkedin.com/in/liliia-sazonova/" class="social-link link" target="_blank">
               <svg class="icons">
                 <use href="./img/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list">
-            <a href="#" class="social-link link" target="_blank">
+          <li class="social-item">
+            <a href="https://t.me/Li_Sazonova" class="social-link link" target="_blank">
               <svg class="icons">
                 <use href="./img/icons.svg#telegram"></use>
               </svg>
@@ -46,14 +46,14 @@
       </div>
 
       <nav class="nav">
-        <ul class="nav-list list">
-          <a href="#" class="nav-link link">
+        <ul class="nav-list">
+          <a href="#tech_skills" class="nav-link link">
             <li class="nav-item">Tech Skills</li>
           </a>
-          <a href="#" class="nav-link link">
+          <a href="#about" class="nav-link link">
             <li class="nav-item">About me</li>
           </a>
-          <a href="#" class="nav-link link">
+          <a href="#projects" class="nav-link link">
             <li class="nav-item">Projects</li>
           </a>
         </ul>
@@ -84,7 +84,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="title">About me</h2>
         <p class="about-me">
@@ -101,10 +101,10 @@
       </div>
     </section>
 
-    <section class="tech">
+    <section class="tech" id="tech_skills">
       <div class="container">
         <h2 class="title">Tech Skills</h2>
-        <ul class="tech-list list">
+        <ul class="tech-list">
           <li class="tech-item">
             <img class="tech-img" src="./img/tech/html.png" alt="HTML5">
           </li>
@@ -142,10 +142,10 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <h2 class="title">Projects</h2>
-        <ul class="card-list list">
+        <ul class="card-list">
           <li class="card-item">
             <img src="img/projects/CheetSheet.png" alt="Landing" />
             <p class="card-title">Cheet Sheet for Designers</p>
@@ -153,8 +153,8 @@
               responsive layout, burger menu and
               attractive design.</p>
             <div class="card-btns">
-              <button class="btn-prev">Live Preview</button>
-              <button class="btn-code">View Code</button>
+              <button class="btn-prev">Preview</button>
+              <button class="btn-code">Code</button>
             </div>
           </li>
           <li class="card-item">
@@ -168,8 +168,8 @@
               Swiper for
               implementing carousels and sliders.</p>
             <div class="card-btns">
-              <button class="btn-prev">Live Preview</button>
-              <button class="btn-code">View Code</button>
+              <button class="btn-prev">Preview</button>
+              <button class="btn-code">Code</button>
             </div>
           </li>
           <li class="card-item">
@@ -182,8 +182,8 @@
               authentication system is integrated with backend services, supporting secure login and logout
               functionality.</p>
             <div class="card-btns">
-              <button class="btn-prev">Live Preview</button>
-              <button class="btn-code">View Code</button>
+              <button class="btn-prev">Preview</button>
+              <button class="btn-code">Code</button>
             </div>
           </li>
         </ul>
@@ -196,7 +196,7 @@
           <div class="contacts">
             <h3 class="title">Let's Connect</h3>
             <div class="line"></div>
-            <ul class="contacts-list list">
+            <ul class="contacts-list">
               <li class="contacts-item">
                 <a class="contacts-link link" href="mailto:lilissazonova@gmail.com">
                   <svg class="icons icons-grey">
@@ -213,7 +213,7 @@
                   +380988227077</a>
               </li>
               <li class="contacts-item">
-                <a class="contacts-link link" href="#">
+                <a href="https://maps.app.goo.gl/AJN9wdWVfhp27Kvs8" class="contacts-link link" target="_blank">
                   <svg class="icons icons-grey">
                     <use href="./img/icons.svg#location"></use>
                   </svg>
@@ -223,7 +223,7 @@
           </div>
           <div class="connect-form">
             <h3 class="title">Send me a message</h3>
-            <form class="form" action="">
+            <form class="form">
               <input type="email" id="email" name="email" placeholder="Email" required>
               <input type="text" id="name" name="name" placeholder="Name" required>
               <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
