@@ -60,6 +60,7 @@ body {
 .icons {
     width: 24px;
     height: 24px;
+    color: var(--cold-grey);
     transition: transform 0.3s ease-in;
 }
 
@@ -75,6 +76,8 @@ body {
 /* header */
 
 .header {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        background-color: #929eb012;
     padding: 40px 20px 30px;
 }
 
@@ -131,6 +134,7 @@ body {
     justify-content: center;
     padding: 30px 50px;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-title {
@@ -438,9 +442,12 @@ border: 1px solid var(--white);
     background: linear-gradient(135deg, rgba(101, 104, 244, 0.1), rgba(89, 201, 217, 0.1));
         border: 1px solid var(--cold-grey);
         border-radius: 15px;
+        /* outline: none; */
+        resize: none;
 }
 
 .form button {
+    /* display: block; */
     width: 100%;
     padding: 10px 20px;
     background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
