@@ -8,9 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -18,24 +15,79 @@
 <body>
   <header class="header">
     <div class="container header-container">
-      <div class="social">
-        <a href="index.html" class="logo link">Li.Sa</a>
-        <ul class="social-list">
-          <li class="social-item">
+      <a href="index.html" class="logo link">Li.Sa</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#tech_skills" class="nav-link link">Tech Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://github.com/LiSazonova" class="social-link link" target="_blank">
+            <svg class="icons">
+              <use href="./img/icons.svg#github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://linkedin.com/in/liliia-sazonova/" class="social-link link" target="_blank">
+            <svg class="icons">
+              <use href="./img/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/Li_Sazonova" class="social-link link" target="_blank">
+            <svg class="icons">
+              <use href="./img/icons.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="burger">
+        <svg class="icons menu-toggle-icon">
+          <use href="./img/icons.svg#open"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="mob-menu js-menu-container">
+      <div class="container">
+        <div class="burger">
+          <svg class="icons menu-toggle">
+            <use href="./img/icons.svg#close"></use>
+          </svg>
+        </div>
+        <div class="mob-lists"></div>
+        <ul class="mobile-nav-list">
+          <li><a href="#tech_skills" class="nav-link link">Tech Skills</a></li>
+          <li><a href="#about" class="nav-link link">About me</a></li>
+          <li><a href="#projects" class="nav-link link">Projects</a></li>
+        </ul>
+
+        <ul class="mobile-social-list">
+          <li class="mobile-social-item">
             <a href="https://github.com/LiSazonova" class="social-link link" target="_blank">
               <svg class="icons">
                 <use href="./img/icons.svg#github"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
+          <li class="mobile-social-item">
             <a href="https://linkedin.com/in/liliia-sazonova/" class="social-link link" target="_blank">
               <svg class="icons">
                 <use href="./img/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
+          <li class="mobile-social-item">
             <a href="https://t.me/Li_Sazonova" class="social-link link" target="_blank">
               <svg class="icons">
                 <use href="./img/icons.svg#telegram"></use>
@@ -44,29 +96,13 @@
           </li>
         </ul>
       </div>
-
-      <nav class="nav">
-        <ul class="nav-list">
-          <a href="#tech_skills" class="nav-link link">
-            <li class="nav-item">Tech Skills</li>
-          </a>
-          <a href="#about" class="nav-link link">
-            <li class="nav-item">About me</li>
-          </a>
-          <a href="#projects" class="nav-link link">
-            <li class="nav-item">Projects</li>
-          </a>
-        </ul>
-      </nav>
     </div>
   </header>
   <main>
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Hi, I'm <span class="hero-name">Lili Sazonova</span>, Frontend Developer</h1>
-        <p class="hero-description">
-          Frontend Magic: Coding Dreams into Reality!
-        </p>
+
 
         <div class="hero-image-wrapper">
           <div class="decorative-circle">
@@ -82,12 +118,15 @@
           <a href="your-cv-link.pdf" class="download-btn">Download CV</a>
         </div>
       </div>
+      <p class="description">
+        Frontend Magic: Coding Dreams into Reality!
+      </p>
     </section>
 
     <section class="about" id="about">
       <div class="container">
         <h2 class="title">About me</h2>
-        <p class="about-me">
+        <p class="about-descr">
           I am a Front-End Developer with a strong passion for learning
           and growth. I have hands-on skills in HTML, CSS, JavaScript, and
           REST APIs. My strengths include attention to detail, problem-solving
@@ -145,48 +184,51 @@
     <section class="projects" id="projects">
       <div class="container">
         <h2 class="title">Projects</h2>
-        <ul class="card-list">
-          <li class="card-item">
-            <img src="img/projects/CheetSheet.png" alt="Landing" />
-            <p class="card-title">Cheet Sheet for Designers</p>
-            <p class="card-subtitle">Designer landing page with the opportunity to buy training materials. Website with
-              responsive layout, burger menu and
-              attractive design.</p>
-            <div class="card-btns">
-              <button class="btn-prev">Preview</button>
-              <button class="btn-code">Code</button>
-            </div>
-          </li>
-          <li class="card-item">
-            <img src="./img/projects/landing.png" alt="Landing" />
-            <p class="card-title">Lloud Jefferson</p>
-            <p class="card-subtitle">Project involving the development of a web application using modern technologies.
-              The application provides users with an
-              interactive and user-friendly interface to interact with various features. Libraries used include Axios
-              for handling
-              HTTP requests, Accordion-js for creating interactive accordion elements, Izitoast for notifications, and
-              Swiper for
-              implementing carousels and sliders.</p>
-            <div class="card-btns">
-              <button class="btn-prev">Preview</button>
-              <button class="btn-code">Code</button>
-            </div>
-          </li>
-          <li class="card-item">
-            <img src="./img/projects/contactapp.png" alt="App" />
-            <p class="card-title">Contacts Book App</p>
-            <p class="card-subtitle">This web application provides a user authentication system, allowing users to
-              register, log in, and manage their
-              profiles. Built using React, the app leverages Redux for state management and React Router for seamless
-              navigation. The
-              authentication system is integrated with backend services, supporting secure login and logout
-              functionality.</p>
-            <div class="card-btns">
-              <button class="btn-prev">Preview</button>
-              <button class="btn-code">Code</button>
-            </div>
-          </li>
-        </ul>
+        <div class="cards">
+          <ul class="card-list">
+            <li class="card-item">
+              <img src="img/projects/CheetSheet.png" alt="Landing" />
+              <p class="card-title">Cheet Sheet for Designers</p>
+              <p class="card-descr">Designer landing page with the opportunity to buy training materials. Website with
+                responsive layout, burger menu and
+                attractive design.</p>
+              <div class="card-btns">
+                <button class="btn-prev">Preview</button>
+                <button class="btn-code">Code</button>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="./img/projects/landing.png" alt="Landing" />
+              <p class="card-title">Lloud Jefferson</p>
+              <p class="card-descr">Project involving the development of a web application using modern technologies.
+                The application provides users with an
+                interactive and user-friendly interface to interact with various features. Libraries used include Axios
+                for handling
+                HTTP requests, Accordion-js for creating interactive accordion elements, Izitoast for notifications, and
+                Swiper for
+                implementing carousels and sliders.</p>
+              <div class="card-btns">
+                <button class="btn-prev">Preview</button>
+                <button class="btn-code">Code</button>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="./img/projects/contactapp.png" alt="App" />
+              <p class="card-title">Contacts Book App</p>
+              <p class="card-descr">This web application provides a user authentication system, allowing users to
+                register, log in, and manage their
+                profiles. Built using React, the app leverages Redux for state management and React Router for seamless
+                navigation. The
+                authentication system is integrated with backend services, supporting secure login and logout
+                functionality.</p>
+              <div class="card-btns">
+                <button class="btn-prev">Preview</button>
+                <button class="btn-code">Code</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
@@ -234,8 +276,7 @@
 
     </footer>
   </main>
+  <script type="module" src="./js/menu.js"></script>
 </body>
-
-
 
 </html>
